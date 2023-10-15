@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5D34452AD985A100AEA99D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34442AD985A100AEA99D /* AppCoordinator.swift */; };
+		AB5D34472ADBF1EF00AEA99D /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34462ADBF1EF00AEA99D /* TabBarCoordinator.swift */; };
+		AB5D34492ADBF51000AEA99D /* AccountSettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34482ADBF51000AEA99D /* AccountSettingsCoordinator.swift */; };
+		AB5D344C2ADC0F2700AEA99D /* UITabBarItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D344B2ADC0F2700AEA99D /* UITabBarItem+Extension.swift */; };
+		AB5D344F2ADC113000AEA99D /* EventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D344E2ADC113000AEA99D /* EventCoordinator.swift */; };
+		AB5D34512ADC113D00AEA99D /* CalendarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34502ADC113D00AEA99D /* CalendarCoordinator.swift */; };
+		AB5D34562ADC118F00AEA99D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34552ADC118F00AEA99D /* CalendarViewController.swift */; };
+		AB5D34582ADC11AC00AEA99D /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34572ADC11AC00AEA99D /* EventViewController.swift */; };
 		ABE2CC942AD2D54900A70864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC932AD2D54900A70864 /* AppDelegate.swift */; };
 		ABE2CC962AD2D54900A70864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */; };
-		ABE2CC982AD2D54900A70864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC972AD2D54900A70864 /* ViewController.swift */; };
-		ABE2CC9B2AD2D54900A70864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2CC992AD2D54900A70864 /* Main.storyboard */; };
+		ABE2CC982AD2D54900A70864 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC972AD2D54900A70864 /* AccountViewController.swift */; };
 		ABE2CC9D2AD2D54B00A70864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE2CC9C2AD2D54B00A70864 /* Assets.xcassets */; };
 		ABE2CCA02AD2D54B00A70864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE2CC9E2AD2D54B00A70864 /* LaunchScreen.storyboard */; };
+		ABE2CCC72AD2E20F00A70864 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE2CCC62AD2E20F00A70864 /* NetworkKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB5D34442AD985A100AEA99D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AB5D34462ADBF1EF00AEA99D /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		AB5D34482ADBF51000AEA99D /* AccountSettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsCoordinator.swift; sourceTree = "<group>"; };
+		AB5D344B2ADC0F2700AEA99D /* UITabBarItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extension.swift"; sourceTree = "<group>"; };
+		AB5D344E2ADC113000AEA99D /* EventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCoordinator.swift; sourceTree = "<group>"; };
+		AB5D34502ADC113D00AEA99D /* CalendarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCoordinator.swift; sourceTree = "<group>"; };
+		AB5D34552ADC118F00AEA99D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		AB5D34572ADC11AC00AEA99D /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		ABE2CC902AD2D54900A70864 /* TheatreScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheatreScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE2CC932AD2D54900A70864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABE2CC972AD2D54900A70864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABE2CC9A2AD2D54900A70864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABE2CC972AD2D54900A70864 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		ABE2CC9C2AD2D54B00A70864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE2CC9F2AD2D54B00A70864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABE2CCA12AD2D54B00A70864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE2CCC62AD2E20F00A70864 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE2CCC72AD2E20F00A70864 /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5D34432AD9859200AEA99D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D34442AD985A100AEA99D /* AppCoordinator.swift */,
+				AB5D344D2ADC109A00AEA99D /* TabBarCoordinator */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		AB5D344A2ADC0F0B00AEA99D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D344B2ADC0F2700AEA99D /* UITabBarItem+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AB5D344D2ADC109A00AEA99D /* TabBarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D34462ADBF1EF00AEA99D /* TabBarCoordinator.swift */,
+				AB5D344E2ADC113000AEA99D /* EventCoordinator.swift */,
+				AB5D34502ADC113D00AEA99D /* CalendarCoordinator.swift */,
+				AB5D34482ADBF51000AEA99D /* AccountSettingsCoordinator.swift */,
+			);
+			name = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
+		AB5D34522ADC114200AEA99D /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2CC972AD2D54900A70864 /* AccountViewController.swift */,
+			);
+			name = AccountScreen;
+			sourceTree = "<group>";
+		};
+		AB5D34532ADC116A00AEA99D /* EventScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D34572ADC11AC00AEA99D /* EventViewController.swift */,
+			);
+			name = EventScreen;
+			sourceTree = "<group>";
+		};
+		AB5D34542ADC117400AEA99D /* CalendarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D34552ADC118F00AEA99D /* CalendarViewController.swift */,
+			);
+			name = CalendarScreen;
+			sourceTree = "<group>";
+		};
 		ABE2CC872AD2D54900A70864 = {
 			isa = PBXGroup;
 			children = (
 				ABE2CC922AD2D54900A70864 /* TheatreScheduler */,
 				ABE2CC912AD2D54900A70864 /* Products */,
+				ABE2CCC52AD2E20F00A70864 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +126,50 @@
 		ABE2CC922AD2D54900A70864 /* TheatreScheduler */ = {
 			isa = PBXGroup;
 			children = (
-				ABE2CC932AD2D54900A70864 /* AppDelegate.swift */,
-				ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */,
-				ABE2CC972AD2D54900A70864 /* ViewController.swift */,
-				ABE2CC992AD2D54900A70864 /* Main.storyboard */,
+				AB5D344A2ADC0F0B00AEA99D /* Extensions */,
+				AB5D34432AD9859200AEA99D /* Coordinators */,
+				ABE2CCCB2AD2E57E00A70864 /* Application */,
+				ABE2CCCA2AD2E56400A70864 /* Sources */,
+				ABE2CCC92AD2E4E500A70864 /* Resources */,
+			);
+			path = TheatreScheduler;
+			sourceTree = "<group>";
+		};
+		ABE2CCC52AD2E20F00A70864 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2CCC62AD2E20F00A70864 /* NetworkKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABE2CCC92AD2E4E500A70864 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				ABE2CC9C2AD2D54B00A70864 /* Assets.xcassets */,
 				ABE2CC9E2AD2D54B00A70864 /* LaunchScreen.storyboard */,
 				ABE2CCA12AD2D54B00A70864 /* Info.plist */,
 			);
-			path = TheatreScheduler;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ABE2CCCA2AD2E56400A70864 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D34532ADC116A00AEA99D /* EventScreen */,
+				AB5D34542ADC117400AEA99D /* CalendarScreen */,
+				AB5D34522ADC114200AEA99D /* AccountScreen */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		ABE2CCCB2AD2E57E00A70864 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ABE2CC932AD2D54900A70864 /* AppDelegate.swift */,
+				ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +232,6 @@
 			files = (
 				ABE2CCA02AD2D54B00A70864 /* LaunchScreen.storyboard in Resources */,
 				ABE2CC9D2AD2D54B00A70864 /* Assets.xcassets in Resources */,
-				ABE2CC9B2AD2D54900A70864 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +242,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE2CC982AD2D54900A70864 /* ViewController.swift in Sources */,
+				AB5D34562ADC118F00AEA99D /* CalendarViewController.swift in Sources */,
+				AB5D34582ADC11AC00AEA99D /* EventViewController.swift in Sources */,
+				AB5D34492ADBF51000AEA99D /* AccountSettingsCoordinator.swift in Sources */,
+				AB5D34452AD985A100AEA99D /* AppCoordinator.swift in Sources */,
+				AB5D34512ADC113D00AEA99D /* CalendarCoordinator.swift in Sources */,
+				ABE2CC982AD2D54900A70864 /* AccountViewController.swift in Sources */,
 				ABE2CC942AD2D54900A70864 /* AppDelegate.swift in Sources */,
+				AB5D344C2ADC0F2700AEA99D /* UITabBarItem+Extension.swift in Sources */,
+				AB5D34472ADBF1EF00AEA99D /* TabBarCoordinator.swift in Sources */,
 				ABE2CC962AD2D54900A70864 /* SceneDelegate.swift in Sources */,
+				AB5D344F2ADC113000AEA99D /* EventCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ABE2CC992AD2D54900A70864 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABE2CC9A2AD2D54900A70864 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ABE2CC9E2AD2D54B00A70864 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +400,7 @@
 				INFOPLIST_FILE = TheatreScheduler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -327,7 +431,7 @@
 				INFOPLIST_FILE = TheatreScheduler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
