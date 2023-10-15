@@ -76,13 +76,13 @@ extension UITabBarItem {
         switch tab {     
         case .events:
             title = "Спектакли"
-            image = UIImage(systemName: "list.bullet")
+            image = UIImage(named: "event")
         case .calendar:
             title = "Календарь"
-            image = UIImage(systemName: "calendar")
+            image = UIImage(named: "calendar")
         case .account:
             title = "Профиль"
-            image = UIImage(systemName: "gear")
+            image = UIImage(named: "user-profile")
         }
     }
     

@@ -2,7 +2,12 @@ import UIKit
 import NetworkKit
 
 final class AccountViewController: UIViewController {
-    
+    private let funnyImage: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFill
+        image.image = UIImage(named: "maks")
+        return image
+    }()
     private let networkService: NetworkProtocol = NetworkManager()
 
     init() {
@@ -16,7 +21,8 @@ final class AccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupFunnyImage()
+        
         networkService.getCrypto(pair: "btc") { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -28,6 +34,13 @@ final class AccountViewController: UIViewController {
         }
     }
 
+    func setupFunnyImage() {
+        view.addSubview(funnyImage)
+        
+        funnyImage.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
 
 }
 
