@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		ABE2CCB52AD2D60100A70864 /* NetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE2CCB42AD2D60100A70864 /* NetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE2CCBC2AD2E17600A70864 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CCBB2AD2E17600A70864 /* NetworkEngine.swift */; };
+		ABE2CCBE2AD2E18200A70864 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CCBD2AD2E18200A70864 /* NetworkManager.swift */; };
+		ABE2CCC02AD2E18A00A70864 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CCBF2AD2E18A00A70864 /* EndpointProtocol.swift */; };
+		ABE2CCC22AD2E19600A70864 /* CryptoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CCC12AD2E19600A70864 /* CryptoEndpoint.swift */; };
+		ABE2CCC42AD2E1DA00A70864 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CCC32AD2E1DA00A70864 /* CryptoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABE2CCB12AD2D60100A70864 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE2CCB42AD2D60100A70864 /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
+		ABE2CCBB2AD2E17600A70864 /* NetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		ABE2CCBD2AD2E18200A70864 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ABE2CCBF2AD2E18A00A70864 /* EndpointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		ABE2CCC12AD2E19600A70864 /* CryptoEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoEndpoint.swift; sourceTree = "<group>"; };
+		ABE2CCC32AD2E1DA00A70864 /* CryptoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				ABE2CCB42AD2D60100A70864 /* NetworkKit.h */,
+				ABE2CCBB2AD2E17600A70864 /* NetworkEngine.swift */,
+				ABE2CCBD2AD2E18200A70864 /* NetworkManager.swift */,
+				ABE2CCBF2AD2E18A00A70864 /* EndpointProtocol.swift */,
+				ABE2CCC12AD2E19600A70864 /* CryptoEndpoint.swift */,
+				ABE2CCC32AD2E1DA00A70864 /* CryptoModel.swift */,
 			);
 			path = NetworkKit;
 			sourceTree = "<group>";
@@ -93,6 +108,7 @@
 				TargetAttributes = {
 					ABE2CCB02AD2D60100A70864 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -129,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE2CCC02AD2E18A00A70864 /* EndpointProtocol.swift in Sources */,
+				ABE2CCC22AD2E19600A70864 /* CryptoEndpoint.swift in Sources */,
+				ABE2CCBE2AD2E18200A70864 /* NetworkManager.swift in Sources */,
+				ABE2CCBC2AD2E17600A70864 /* NetworkEngine.swift in Sources */,
+				ABE2CCC42AD2E1DA00A70864 /* CryptoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +284,7 @@
 		ABE2CCB92AD2D60100A70864 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -289,6 +311,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +320,7 @@
 		ABE2CCBA2AD2D60100A70864 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
