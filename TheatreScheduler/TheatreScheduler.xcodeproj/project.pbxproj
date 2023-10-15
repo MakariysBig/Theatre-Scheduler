@@ -15,6 +15,9 @@
 		AB5D34512ADC113D00AEA99D /* CalendarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34502ADC113D00AEA99D /* CalendarCoordinator.swift */; };
 		AB5D34562ADC118F00AEA99D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34552ADC118F00AEA99D /* CalendarViewController.swift */; };
 		AB5D34582ADC11AC00AEA99D /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34572ADC11AC00AEA99D /* EventViewController.swift */; };
+		AB5D345B2ADC16B600AEA99D /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D345A2ADC16B600AEA99D /* Entity.swift */; };
+		AB5D345E2ADC1B6200AEA99D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB5D345D2ADC1B6200AEA99D /* SnapKit */; };
+		AB5D34602ADC1B6200AEA99D /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AB5D345F2ADC1B6200AEA99D /* SnapKit-Dynamic */; };
 		ABE2CC942AD2D54900A70864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC932AD2D54900A70864 /* AppDelegate.swift */; };
 		ABE2CC962AD2D54900A70864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */; };
 		ABE2CC982AD2D54900A70864 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC972AD2D54900A70864 /* AccountViewController.swift */; };
@@ -32,6 +35,7 @@
 		AB5D34502ADC113D00AEA99D /* CalendarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCoordinator.swift; sourceTree = "<group>"; };
 		AB5D34552ADC118F00AEA99D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		AB5D34572ADC11AC00AEA99D /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		AB5D345A2ADC16B600AEA99D /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		ABE2CC902AD2D54900A70864 /* TheatreScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheatreScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE2CC932AD2D54900A70864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE2CCC72AD2E20F00A70864 /* NetworkKit.framework in Frameworks */,
+				AB5D345E2ADC1B6200AEA99D /* SnapKit in Frameworks */,
+				AB5D34602ADC1B6200AEA99D /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +112,14 @@
 			name = CalendarScreen;
 			sourceTree = "<group>";
 		};
+		AB5D34592ADC16A500AEA99D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D345A2ADC16B600AEA99D /* Entity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		ABE2CC872AD2D54900A70864 = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +140,10 @@
 		ABE2CC922AD2D54900A70864 /* TheatreScheduler */ = {
 			isa = PBXGroup;
 			children = (
-				AB5D344A2ADC0F0B00AEA99D /* Extensions */,
-				AB5D34432AD9859200AEA99D /* Coordinators */,
 				ABE2CCCB2AD2E57E00A70864 /* Application */,
+				AB5D34432AD9859200AEA99D /* Coordinators */,
+				AB5D34592ADC16A500AEA99D /* Entity */,
+				AB5D344A2ADC0F0B00AEA99D /* Extensions */,
 				ABE2CCCA2AD2E56400A70864 /* Sources */,
 				ABE2CCC92AD2E4E500A70864 /* Resources */,
 			);
@@ -188,6 +203,10 @@
 			dependencies = (
 			);
 			name = TheatreScheduler;
+			packageProductDependencies = (
+				AB5D345D2ADC1B6200AEA99D /* SnapKit */,
+				AB5D345F2ADC1B6200AEA99D /* SnapKit-Dynamic */,
+			);
 			productName = TheatreScheduler;
 			productReference = ABE2CC902AD2D54900A70864 /* TheatreScheduler.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +235,9 @@
 				Base,
 			);
 			mainGroup = ABE2CC872AD2D54900A70864;
+			packageReferences = (
+				AB5D345C2ADC1B6200AEA99D /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ABE2CC912AD2D54900A70864 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,6 +272,7 @@
 				ABE2CC982AD2D54900A70864 /* AccountViewController.swift in Sources */,
 				ABE2CC942AD2D54900A70864 /* AppDelegate.swift in Sources */,
 				AB5D344C2ADC0F2700AEA99D /* UITabBarItem+Extension.swift in Sources */,
+				AB5D345B2ADC16B600AEA99D /* Entity.swift in Sources */,
 				AB5D34472ADBF1EF00AEA99D /* TabBarCoordinator.swift in Sources */,
 				ABE2CC962AD2D54900A70864 /* SceneDelegate.swift in Sources */,
 				AB5D344F2ADC113000AEA99D /* EventCoordinator.swift in Sources */,
@@ -473,6 +496,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB5D345C2ADC1B6200AEA99D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB5D345D2ADC1B6200AEA99D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB5D345C2ADC1B6200AEA99D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		AB5D345F2ADC1B6200AEA99D /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB5D345C2ADC1B6200AEA99D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ABE2CC882AD2D54900A70864 /* Project object */;
 }

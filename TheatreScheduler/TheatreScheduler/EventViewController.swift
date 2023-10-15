@@ -1,7 +1,15 @@
 import UIKit
 import NetworkKit
+import SnapKit
 
 final class EventViewController: UIViewController {
+    
+    private let funnyImage: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFill
+        image.image = UIImage(named: "masha")
+        return image
+    }()
     
     private let networkService: NetworkProtocol = NetworkManager()
 
@@ -16,7 +24,9 @@ final class EventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
+        setupFunnyImage()
+        
         networkService.getCrypto(pair: "btc") { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -31,3 +41,21 @@ final class EventViewController: UIViewController {
 
 }
 
+// MARK: - Private func
+
+private extension EventViewController {
+    
+    func setupView() {
+        title = "Спектакли"
+        view.backgroundColor = .systemBackground
+    }
+    
+    func setupFunnyImage() {
+        view.addSubview(funnyImage)
+        
+        funnyImage.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
+    
+}
