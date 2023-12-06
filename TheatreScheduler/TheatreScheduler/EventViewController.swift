@@ -25,7 +25,7 @@ final class EventViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        setupFunnyImage()
+//        setupFunnyImage()
         
         networkService.getCrypto(pair: "btc") { [weak self] result in
             guard let self = self else { return }

@@ -18,6 +18,9 @@
 		AB5D345B2ADC16B600AEA99D /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D345A2ADC16B600AEA99D /* Entity.swift */; };
 		AB5D345E2ADC1B6200AEA99D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB5D345D2ADC1B6200AEA99D /* SnapKit */; };
 		AB5D34602ADC1B6200AEA99D /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AB5D345F2ADC1B6200AEA99D /* SnapKit-Dynamic */; };
+		AB5D34622ADC2E0900AEA99D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34612ADC2E0900AEA99D /* EventViewModel.swift */; };
+		AB5D34642ADC2E1300AEA99D /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34632ADC2E1300AEA99D /* CalendarViewModel.swift */; };
+		AB5D34662ADC2E2000AEA99D /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D34652ADC2E2000AEA99D /* AccountViewModel.swift */; };
 		ABE2CC942AD2D54900A70864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC932AD2D54900A70864 /* AppDelegate.swift */; };
 		ABE2CC962AD2D54900A70864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */; };
 		ABE2CC982AD2D54900A70864 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2CC972AD2D54900A70864 /* AccountViewController.swift */; };
@@ -36,6 +39,9 @@
 		AB5D34552ADC118F00AEA99D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		AB5D34572ADC11AC00AEA99D /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		AB5D345A2ADC16B600AEA99D /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		AB5D34612ADC2E0900AEA99D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		AB5D34632ADC2E1300AEA99D /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		AB5D34652ADC2E2000AEA99D /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		ABE2CC902AD2D54900A70864 /* TheatreScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheatreScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE2CC932AD2D54900A70864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE2CC952AD2D54900A70864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE2CC972AD2D54900A70864 /* AccountViewController.swift */,
+				AB5D34652ADC2E2000AEA99D /* AccountViewModel.swift */,
 			);
 			name = AccountScreen;
 			sourceTree = "<group>";
@@ -100,16 +107,26 @@
 			isa = PBXGroup;
 			children = (
 				AB5D34572ADC11AC00AEA99D /* EventViewController.swift */,
+				AB5D34612ADC2E0900AEA99D /* EventViewModel.swift */,
 			);
 			name = EventScreen;
 			sourceTree = "<group>";
 		};
-		AB5D34542ADC117400AEA99D /* CalendarScreen */ = {
+		AB5D34542ADC117400AEA99D /* CalendarModule */ = {
 			isa = PBXGroup;
 			children = (
 				AB5D34552ADC118F00AEA99D /* CalendarViewController.swift */,
+				AB5D34632ADC2E1300AEA99D /* CalendarViewModel.swift */,
 			);
-			name = CalendarScreen;
+			name = CalendarModule;
+			sourceTree = "<group>";
+		};
+		AB5D34592ADC16A500AEA99D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D345A2ADC16B600AEA99D /* Entity.swift */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 		AB5D34592ADC16A500AEA99D /* Entity */ = {
@@ -172,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				AB5D34532ADC116A00AEA99D /* EventScreen */,
-				AB5D34542ADC117400AEA99D /* CalendarScreen */,
+				AB5D34542ADC117400AEA99D /* CalendarModule */,
 				AB5D34522ADC114200AEA99D /* AccountScreen */,
 			);
 			name = Sources;
@@ -265,15 +282,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB5D34562ADC118F00AEA99D /* CalendarViewController.swift in Sources */,
+				AB5D34662ADC2E2000AEA99D /* AccountViewModel.swift in Sources */,
 				AB5D34582ADC11AC00AEA99D /* EventViewController.swift in Sources */,
 				AB5D34492ADBF51000AEA99D /* AccountSettingsCoordinator.swift in Sources */,
 				AB5D34452AD985A100AEA99D /* AppCoordinator.swift in Sources */,
 				AB5D34512ADC113D00AEA99D /* CalendarCoordinator.swift in Sources */,
 				ABE2CC982AD2D54900A70864 /* AccountViewController.swift in Sources */,
+				AB5D34642ADC2E1300AEA99D /* CalendarViewModel.swift in Sources */,
 				ABE2CC942AD2D54900A70864 /* AppDelegate.swift in Sources */,
 				AB5D344C2ADC0F2700AEA99D /* UITabBarItem+Extension.swift in Sources */,
 				AB5D345B2ADC16B600AEA99D /* Entity.swift in Sources */,
 				AB5D34472ADBF1EF00AEA99D /* TabBarCoordinator.swift in Sources */,
+				AB5D34622ADC2E0900AEA99D /* EventViewModel.swift in Sources */,
 				ABE2CC962AD2D54900A70864 /* SceneDelegate.swift in Sources */,
 				AB5D344F2ADC113000AEA99D /* EventCoordinator.swift in Sources */,
 			);
@@ -419,6 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B76BBTR724;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheatreScheduler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,6 +471,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B76BBTR724;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheatreScheduler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
