@@ -129,6 +129,14 @@
 			name = Entity;
 			sourceTree = "<group>";
 		};
+		AB5D34592ADC16A500AEA99D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D345A2ADC16B600AEA99D /* Entity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		ABE2CC872AD2D54900A70864 = {
 			isa = PBXGroup;
 			children = (
