@@ -1,10 +1,3 @@
-//
-//  CalendarCoordinator.swift
-//  TheatreScheduler
-//
-//  Created by Maksim Makarevich on 15.10.23.
-//
-
 import Foundation
 import UIKit
 
@@ -36,10 +29,10 @@ final class CalendarCoordinator: TabCoordinator {
     // MARK: - Open func
     
     func start() {
-//        let menuViewModel = MenuViewModel(output: self, coordinatorDelegate: self)
-        let menuViewController = CalendarViewController()
+        let viewModel = CalendarViewModel()
+        let viewController = CalendarViewController(viewModel: viewModel)
         navigationController.tabBarItem.configure(tab: tab)
-        navigationController.setViewControllers([menuViewController], animated: false)
+        navigationController.setViewControllers([viewController], animated: false)
     }
     
 }

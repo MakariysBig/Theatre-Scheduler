@@ -28,6 +28,7 @@ final class AppCoordinator: Coordinator {
             let coordinator = TabBarCoordinator(navigationController: navigationController,
                                                 delegate: self)
             coordinator.start()
+            navigationController.navigationBar.isHidden = true
             childCoordinators.append(coordinator)
         }
     }
